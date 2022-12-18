@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'url-project';
+
+  @Output() loadedFeature = 'url';
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
+
+ // title = 'url-project';
 }

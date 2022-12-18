@@ -1,0 +1,14 @@
+
+nav.navbar.navbar-default{
+    border: 1px;
+    background-color: green;
+    color: white;
+    padding: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}

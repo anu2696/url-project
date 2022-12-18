@@ -1,0 +1,11 @@
+input.text{
+    width: 60%;
+}
+
+.btn-success{
+    background-color:green;
+    width: 10%;
+    padding: 1%;
+    color: white;
+    font-weight: bolder;
+}
