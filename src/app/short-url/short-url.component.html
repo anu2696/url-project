@@ -1,8 +1,12 @@
-<h3>Enter Short URL</h3>
-<form>
-    <input type="text" style="width:60%"/>
+
+<form (ngSubmit)="onSubmitShort(f)" #f="ngForm">
+    <label for="shortURL">Short URL</label>
+    <input type="text" id="shorturl" class="form-control" name="shorturl" style="width:60%" ngModel required/>
+    <br><br>
+    <button class="btn btn-success" type="submit" style="background-color:rgba(0, 98, 255, 0.844)">Get Long URL</button>
     <br><br><br><br>
-    <input type="button" class="btn btn-success" value="Get Long URL"/>
-    <br><br><br><br>
-    <textarea style="width:60%;"></textarea>
+
+  
+
+    <textarea style="width:60%;" *ngIf=""></textarea>
 </form>

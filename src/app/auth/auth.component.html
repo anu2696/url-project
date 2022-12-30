@@ -1,9 +1,18 @@
 <div class="row">
     <div class="col-xs-15">
-        <label for="email">Email</label> <br>
-        <input type="text" name="email" /><br><br>
-        <label for="password">Password</label><br>
-        <input type="password" name="password"><br><br>
-        <input type="submit" class="btn btn-success" value="Login"/> | <input type="submit" class="btn btn-primary" value="Sign Up">
+        <form (ngSubmit)="onSignUp(f)" #f="ngForm">
+            <label for="email">Email</label> <br>
+            <input type="text" id="email" class="form-control" name="email" style="width:60%" ngModel required/><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" class="form-control" name="password" style="width:60%" ngModel required/><br>
+            <button class="btn btn-success" type="submit" style="background-color:rgba(0, 98, 255, 0.844)">Login</button> |
+            <button class="btn btn-success" type="submit" style="background-color:rgba(0, 98, 255, 0.844)">Sign Up</button>
+        </form>
+       
+      
+        
+        
+       <!-- <input type="submit" class="btn btn-success" value="Login"/> | <input type="submit" class="btn btn-primary" value="Sign Up">
+    -->
     </div>
 </div>
